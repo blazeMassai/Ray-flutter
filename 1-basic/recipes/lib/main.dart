@@ -65,7 +65,7 @@ class _MyHomePageState extends State<MyHomePage> {
                     MaterialPageRoute(
                       //builder creates the destination page widget.
                       builder: (context){
-                        return RecipeDetail(recipe: Recipe?.samples[index]);
+                        return RecipeDetail(recipe: Recipe.samples[index]);
                       },
                     ),
                 );

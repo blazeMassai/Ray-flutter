@@ -1,17 +1,18 @@
 
 
 class Recipe {
-  int? servings;
+  int servings;
   List<Ingredient> ingredients;
 
   String label;
   String imageUrl;
 
-  Recipe(this.label, this.imageUrl, this.ingredients);
+  Recipe(this.label, this.imageUrl, this.servings, this.ingredients);
 
   static List<Recipe> samples = [
     Recipe('Spaghetti and Meatballs',
         'assets/tambi.jpg',
+            4,
             [
             Ingredient(1, 'box', 'Spaghetti'),
             Ingredient(4, '', 'Frozen Meatballs'),
@@ -21,6 +22,7 @@ class Recipe {
     ),
     Recipe('Tomato Soup',
         'assets/sauce.jpg',
+        2,
         [
           Ingredient(1, 'can', 'Tomato Soup'),
         ],
@@ -28,6 +30,7 @@ class Recipe {
 
     Recipe('Grilled Cheese',
         'assets/grilled-cheese.jpeg',
+      1,
       [
         Ingredient(2, 'slices', 'Cheese'),
         Ingredient(2, 'slices', 'Bread'),
@@ -36,6 +39,7 @@ class Recipe {
 
     Recipe('Chocolate Chip Cookies',
         'assets/cookies.jpg',
+      24,
       [
         Ingredient(4, 'cups', 'flour'),
         Ingredient(2, 'cups', 'sugar'),
@@ -45,6 +49,7 @@ class Recipe {
 
     Recipe('Taco Salad',
         'assets/taco.jpg',
+      1,
       [
         Ingredient(4, 'oz', 'nachos'),
         Ingredient(3, 'oz', 'taco meat'),
@@ -55,6 +60,7 @@ class Recipe {
 
     Recipe('Hawaiian Pizza',
         'assets/pizza.jpg',
+      4,
       [
         Ingredient(1, 'item', 'pizza'),
         Ingredient(1, 'cup', 'pineapple'),
